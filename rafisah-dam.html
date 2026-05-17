@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Holidae</a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="Get Started.html">Packages</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Get Started.html" class="book">Book Now</a>
+        </nav>
+    </header>
+    <div class="content">
+    <h1>Rafisah Dam, Pakistan</h1>
+    <div class="destination-info">
+        <img src="rafisah dam.jpg" alt="Rafisah Dam" class="destination-img">
+        <div class="details">
+            <h2>Overview</h2>
+            <p>
+                Rafisah Dam, located in the northern region of Pakistan, is a magnificent engineering marvel that serves as a vital source of water for irrigation and hydroelectric power generation. This impressive structure offers a serene environment for visitors to enjoy the surrounding natural beauty and learn about the region's rich history.
+            </p>
+            <h2>Price</h2>
+            <h3>$1,750 per person</h3>
+            <a href="#" class="book" onclick="showMessage()">Book Now</a>
+            <div id="popup" class="popup">
+                <p>Booking request sent successfully!</p>
+                <button onclick="closeMessage()">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const toggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
+<script>
+function showMessage() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closeMessage() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+</body>
+</html>

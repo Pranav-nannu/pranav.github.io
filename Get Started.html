@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Holidae</a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="Get Started.html">Packages</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Get Started.html" class="book">Book Now</a>
+        </nav>
+    </header>
+    <section class="destinations" id="destinations">
+        <h2 class="center">Travel Packages</h2>
+        <div class="box-container">
+            <div class="box">
+                <a href="paris.html">
+                    <img src="paris.jpg" alt="Paris">
+                </a>
+                <div class="info">
+                    <h3>Paris, France</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="bali.html">
+                    <img src="bali.jpg" alt="Bali">
+                </a>
+                <div class="info">
+                    <h3>Bali, Indonesia</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="newyork.html">
+                    <img src="newyork.jpg" alt="New York">
+                </a>
+                <div class="info">
+                    <h3>New York, USA</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="rafisah-dam.html">
+                    <img src="rafisah dam.jpg" alt="Rafisah Dam">
+                </a>
+                <div class="info">
+                    <h3>Al Rafisah Dam, Khor Fakkan</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="hampi.html">
+                    <img src="hampi.jpg" alt="Hampi">
+                </a>
+                <div class="info">
+                    <h3>Hampi, India</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="baku.html">
+                    <img src="baku.jpg" alt="Baku">
+                </a>
+                <div class="info">
+                    <h3>Baku, Azerbaijan</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="salalah.html">
+                    <img src="salalah.jpg" alt="Salalah">
+                </a>
+                <div class="info">
+                    <h3>Salalah, Oman (during the Khareef)</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href="santorini.html">
+                    <img src="santorini.jpg" alt="Santorini">
+                </a>
+                <div class="info">
+                    <h3>Santorini, Greece</h3>
+                </div>
+            </div>
+             <div class="box">
+                <a href="tokyo.html">
+                    <img src="tokyo.jpg" alt="Tokyo">
+                </a>
+                <div class="info">
+                    <h3>Tokyo, Japan</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+const toggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
+</body>
+</html>

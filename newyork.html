@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Holidae</a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="Get Started.html">Packages</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Get Started.html" class="book">Book Now</a>
+        </nav>
+    </header>
+    <div class="content">
+    <h1>New York, USA</h1>
+    <div class="destination-info">
+        <img src="newyork.jpg" alt="New York" class="destination-img">
+        <div class="details">
+            <h2>Overview</h2>
+            <p>
+                New York, the largest city in the United States, is known for its iconic skyline, world-class museums, and vibrant cultural scene. This bustling metropolis offers a perfect blend of entertainment and education, with opportunities for Broadway shows, shopping, and exploring diverse neighborhoods.
+            </p>
+            <h2>Price</h2>
+            <h3>$1,800 per person</h3>
+            <a href="#" class="book" onclick="showMessage()">Book Now</a>
+            <div id="popup" class="popup">
+                <p>Booking request sent successfully!</p>
+                <button onclick="closeMessage()">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const toggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
+<script>
+function showMessage() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closeMessage() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+</body>
+</html>
